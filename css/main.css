@@ -1,0 +1,360 @@
+html,body {
+    height:100%;
+    color: #373737;
+    font-family: Montserrat, helvetica, arial, sans-serif;
+    font-size: 15px;
+    background-color:  #fff;
+}
+
+.ws h1, .ws h2, .ws h3 {
+	font-size: 20px;
+    font-family: serif;
+    margin: 0;
+}
+
+.ws a {
+	color: #373737;
+	text-decoration: none;	
+}
+.ws img {
+	max-width: 100%;
+}
+.ws hr {
+	border-color: #ED4423;
+	margin: 0 0 50px;
+}
+.ws .lead {
+	font-family: 'Roboto Slab', serif;
+}
+
+.ws .btn-default:hover {
+	color: #fff;
+	background-color: #ED4423;
+	border-color: #ED4423;
+}
+
+.ws .center-row, .ws hr {
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+.ws .row.spacer {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.container-fluid {
+	
+}
+
+
+
+/* ----------- TOP NAV ------------ */
+
+.ws .navbar-header {
+	float: none;
+}
+
+.navbar-fixed-top {
+	background-color: #fff;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+}
+.ws .navbar-nav {
+	float: none;
+	display: flex;
+    border: none;
+    justify-content: center;
+}
+.ws .nav>li>a:focus, .ws .nav>li>a:hover {
+	background: none;
+}
+.ws .navbar-nav a, .ws .thumbnail a {
+	text-decoration: none;
+}
+.ws .navbar li {
+	background-color: #373737;
+	float: none;
+	-webkit-transition: background-color 1.2s;
+    transition: background-color 1.2s;
+}
+.ws .navbar-nav li:hover {
+	background-color: #000;
+}
+.ws .navbar li.home {
+	background-color: #283558;
+	border-left: 1px solid #fff;
+}
+
+.ws .navbar-nav a {
+	color: #fff;
+	font-size: 14px;
+	background: none;
+	text-transform: uppercase;
+}
+
+.navbar .navbar-toggle {
+    border-color: #373737;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #373737;
+}
+
+.navbar-brand {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: initial;
+    width: 100%;
+}
+
+
+/* -------------- breadcrumbs -------------- */
+.breadcrumbs_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.breadcrumbs_list li {
+	margin-right: 10px;
+}
+
+.breadcrumbs_list a {
+	color: #a9a9a9;
+}
+.breadcrumbs_list a:after {
+	content: '\003e';
+	padding-left: 8px;
+}
+
+/* -------------- main content -------------- */
+.main-content {
+	margin: 210px auto 10px;
+	max-width: 1400px;
+}
+.main-product {
+	padding-top: 20px;
+}
+.product-content {
+	padding-top: 20px;
+}
+.ws .product-title {
+	margin-bottom: 15px;
+}
+
+.thumbnails {
+	margin-top: 20px;
+}
+
+.product-thumb.active {
+	border: 1px solid #000;
+}
+
+
+/* -------------- shop form ------------ */
+.shop-form {
+	margin-bottom: 20px;
+}
+.shop-form input {
+	margin-bottom: 10px;
+}
+.shop-form input[type="submit"] {
+	margin: 20px 0 0;
+	background-color: #ea1a18;
+	color: white;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	display: block;
+}
+.price {
+	font-weight: bold;
+	font-size: 1.2rem;
+	border: none;
+}
+
+.shop-form select {
+	display: block;
+}
+
+.shop-form .dollar-sign {
+	position: relative;
+	left: 3px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+/* --------------  collapsible content  -------------- */
+.collapsible-outer {
+	padding: 15px 0;
+	border-bottom: 1px solid #dfdfdf;
+}
+.collapsible-outer:first-of-type {
+	border-top: 1px solid #000;
+}
+.collapsible-outer:last-of-type {
+	border-bottom: 1px solid #000;
+}
+.collapsible_header {
+	position: relative;
+	padding: 0 0 10px;
+	text-indent: 20px;
+	text-transform: uppercase;
+}
+.header-collapsed {
+	text-indent: 14px;
+	padding: 0;
+}
+.header-expanded::before, .header-collapsed::before {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #565656;
+}
+.header-collapsed::before {
+	top: 2px;
+	border-top: 8px solid transparent;
+	border-left: 8px solid #565656;
+	border-bottom: 8px solid transparent;
+	border-right: none;
+}
+
+.collapsible_content {
+	padding: 0 20px;
+	height: 0;
+	visibility: hidden;
+	font-size: .9rem;
+}
+.collapsible_content.expanded {
+	height: auto;
+	visibility: visible;
+}
+/* -------------- drop down menu ------------ */
+.ws .navbar-nav>.open>a, .ws .navbar-nav>.open>a:hover {
+	background-color: #ED4423;
+	color: #fff;
+}
+.dropdown-menu>li>a {
+	color: #ED4423;
+}
+.dropdown-menu>li>a:hover {
+	color: #ED4423;
+}
+
+/* collapsed nav */
+.ws .navbar-fixed-top .ws .navbar-collapse {
+    max-height: 360px;
+}
+
+/* -------------- FOOTER -------------- */
+.footer {
+	background: #f1f1f1;
+	margin: 0 0 30px;
+	border-top: 1px solid #373737;
+	text-align: center;
+	font-size: 10px;
+}
+
+.footer .row {
+	padding: 15px 0;
+	margin-left: initial;
+	margin-right: initial;
+}
+
+.footer .update {
+	color: #ea1a18;
+}
+
+/* modal */
+#modal {
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	background: #444;
+	color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1100;
+	display: none;
+	box-sizing: border-box;
+	padding: 45px 20px 20px;
+	/* box shadow */
+	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.74);
+    -moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.74);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.74);
+}
+#modal #close-modal {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: #fff;
+	color: #000;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+
+/* --------------- PAGE HEADER ---------------- 
+.ws .page-header {
+	font-family: 'Roboto Slab', serif;
+	border-color: #ED4423;
+}
+.ws .page-header h1, .ws .page-header h2 {
+	font-size: 45px;
+}
+*/
+@media only screen and (max-width: 768px) {
+	.ws .navbar-header {
+    	border-bottom: 1px solid #777;
+	}
+	.ws .navbar-fixed-top .navbar-collapse {
+	    max-height: 490px;
+	}
+	.ws .navbar-nav {
+		flex-direction: column;
+	}
+	.navbar-collapse {
+		text-align: left;
+	}
+	.navbar-brand {
+		max-width: 150px;
+	}
+	.main-content {
+		margin-top: 90px;
+	}
+
+	.breadcrumbs_list {
+		flex-direction: column;
+	}
+}
+
+/*@media only screen and (max-width: 768px) and (min-width: 980px){
+	.navbar-nav { margin-left: 15%;}
+}
+
+
+@media screen and (min-width: 768px) {
+	.navbar.shrink .navbar-brand {
+		max-width: 125px;
+	}
+
+	#navbar {
+		display: flex !important;
+    	justify-content: center;
+	}
+	
+}*/
